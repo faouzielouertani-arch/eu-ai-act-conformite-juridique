@@ -22,6 +22,8 @@ import { registerGpaiSystemicTool } from "./tools/gpai-systemic.js";
 import { registerArt6ExceptionTool } from "./tools/art6-exception.js";
 import { registerAnnexIvTool } from "./tools/annex-iv.js";
 import { registerAssessSystemTool } from "./tools/assess-system.js";
+import { registerRegulatoryWatchTool } from "./tools/regulatory-watch.js";
+import { registerComplianceMonitorTool } from "./tools/compliance-monitor.js";
 import { annexIIICategories } from "./knowledge/annex-iii.js";
 import { annexIVItems } from "./knowledge/annex-iv.js";
 import {
@@ -57,6 +59,8 @@ export function createServer(): McpServer {
   registerArt6ExceptionTool(server);
   registerAnnexIvTool(server);
   registerAssessSystemTool(server);
+ registerRegulatoryWatchTool(server);
+ registerComplianceMonitorTool(server);
 
   // ── Resources ──
   server.resource(

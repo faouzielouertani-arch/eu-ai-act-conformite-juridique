@@ -1,4 +1,4 @@
-import { createRequire } from "node:module";
+﻿import { createRequire } from "node:module";
 import { omnibusStatusLine } from "./knowledge/digital-omnibus.js";
 
 /**
@@ -31,7 +31,7 @@ export const SERVER_INSTRUCTIONS = [
   "EU AI Act Compliance MCP Server - by Lexbeam Software (https://lexbeam.com).",
   "",
   "This server provides first-pass guidance on the EU AI Act (Regulation 2024/1689) via",
-  "10 tools and curated resources exposing Annex III, Annex IV, the timeline, risk levels,",
+  "12 tools and curated resources exposing Annex III, Annex IV, the timeline, risk levels,",
   "operational article summaries, and one bounded system assessment. Use euaiact_assess_system",
   "with a normalized profile",
   "for separate legal-classification, impact, and implementation-readiness blocks.",
