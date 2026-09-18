@@ -1,6 +1,6 @@
 {
   "contract_version": "1.2",
-  "server_version": "1.5.0",
+  "server_version": "1.5.1",
   "corpus": {
     "id": "eu-ai-act-2026-07-27",
     "regulation_id": "eu-ai-act",
@@ -51,7 +51,8 @@
       "missing_fact_id": "missing.legal.jurisdiction",
       "profile_path": "/geography/placed_on_eu_market",
       "question": "Which fact establishes the Union nexus: placed_on_eu_market, used_in_eu, output_used_in_eu, or an EU entry in jurisdictions?",
-      "reason": "A supplied non-EU jurisdiction alone does not establish EU AI Act territorial scope. Supplying any one of the named geography facts resolves this gap.",
+      "
+reason": "A supplied non-EU jurisdiction alone does not establish EU AI Act territorial scope. Supplying any one of the named geography facts resolves this gap.",
       "decisive": true,
       "affected_blocks": [
         "implementation_readiness",
@@ -101,7 +102,8 @@
     {
       "warning_id": "warning.non-binding-source.001",
       "code": "NON_BINDING_SOURCE",
-      "message": "Corpus verification confirms only the identity and integrity of the pinned files. It does not establish that the consolidated snapshot has legal effect, that the corpus is current or complete for the facts, that an interpretation is correct, or that a system is compliant, certified, approved, or has passed a conformity assessment.",
+      "message": "Corpus verification confirms only the identity and integrity of the pinned files. It does not establish that the consolidated snapshot has legal effect, that the corpus is current or complete for the facts, that an interpretation is correct, or 
+that a system is compliant, certified, approved, or has passed a conformity assessment.",
       "finding_ids": [
         "finding.legal.abstention.missing-facts.001"
       ]
@@ -162,7 +164,8 @@
     "limitations": [
       "Decisive affected-group or consequence facts are missing."
     ],
-    "does_not_alter_legal_classification": true
+    "does_not_alter_legal_classification": tru
+e
   },
   "implementation_readiness": {
     "schema_version": "1.0",

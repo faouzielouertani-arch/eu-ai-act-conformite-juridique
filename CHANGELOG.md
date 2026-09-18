@@ -6,6 +6,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-08-24
+
+Link-correctness patch. No legal content, classification logic, or decision
+contract changed.
+
+### Fixed
+
+- Repointed the `lexbeam_url` field of every `euaiact_classify_system` response
+  from `https://lexbeam.com/tools/mcp`, which returns 404, to
+  `https://lexbeam.com/kontakt`. The dead path shipped in 1.5.0 and reached
+  callers on npm, `mcp.lexbeam.com`, and Smithery.
+
+### Changed
+
+- Rewrote the `smithery.yaml` listing description to state the operative law
+  basis, the deterministic tool set, the fail-closed behaviour on sparse input,
+  and the absence of API keys and telemetry.
+
+### Verification
+
+- Regenerated the twelve golden contract responses, their pinned RFC 8785
+  hashes, the atomic-tools 1.5 compatibility baseline, and the `day-4-baseline`
+  evaluation record. The golden and evaluation regenerations carry the version
+  string only; no assessment result changed.
+
 ## [1.5.0] - 2026-08-14
 
 Decision-contract and verification release. It adds one bounded assessment tool,
@@ -21,7 +46,8 @@ G8 legal-review findings, and makes one command the publication gate.
   corpus identity, actor-specific follow-up calls, and RFC 8785 response hashing.
 - Added twelve runnable contract profiles, complete golden responses, and pinned
   hashes. The permanent suite checks equality, ordering, size, provenance,
-  disclosure, and ten-run determinism.
+  dis
+closure, and ten-run determinism.
 
 ### Legal corrections
 
@@ -59,7 +85,8 @@ G8 legal-review findings, and makes one command the publication gate.
   baseline, and Day 2 records contract 1.1 with every aggregate metric green.
 - Added `npm run verify`, covering a clean build, 467 behavior checks, 96 legal
   claim checks, 48 schema checks, corpus and compiler verification, public grading,
-  explicit golden determinism, package contents, and version identity.
+  expli
+cit golden determinism, package contents, and version identity.
 - Added `npm run verify:release`, which installs the packed tarball into an isolated
   project, checks all twelve profiles over MCP stdio, generates an SPDX runtime
   SBOM, and writes hashed release evidence.
@@ -98,7 +125,8 @@ plus the validation infrastructure that keeps them fixed.
   signal-vs-text contradictions (watchlist wording); `relevant_articles` deduplicated.
 - **FAQ.** Echoes the caller's question verbatim and names the matched entry in a new
   `matched_question` field (a silent substitution answered a different question at
-  high confidence); abstains below the match threshold; near-ties cap at medium;
+  high c
+onfidence); abstains below the match threshold; near-ties cap at medium;
   routing repaired for deadline, penalty, risk-tier, copilot, registration and
   Digital Omnibus questions.
 - **Deadlines.** Milestone `status` is derived from the clock (2 August 2026 was
@@ -124,7 +152,8 @@ plus the validation infrastructure that keeps them fixed.
   (CELEX 02024R1689-20260727), so following a citation shows the amended law instead
   of the superseded original.
 - **Tests.** The suite is date- and timezone-stable through 2031 (it previously went
-  red on 2026-12-02); the backstop guard covers every milestone field with negation
+  red on 2026-12-02); the backstop guard covers every mil
+estone field with negation
   awareness (the documented keyObligations bypass is caught).
 
 ### Added
@@ -162,7 +191,8 @@ families plus three Codex rounds, final verdict SHIP after one remaining routing
 - **Release checks remain valid after 2 August 2026.** The deadline suite no longer
   assumes that the Art. 50 and GPAI enforcement milestone is still upcoming after
   its application date.
-- **The Annex III high-risk date was described as a backstop that could bite earlier. It cannot.** `euaiact_check_deadlines` told callers that 2 December 2027 was "the backstop date" and that "the obligations can bite earlier, six months after a Commission decision that the supporting standards and support measures are available". That mechanism is Commission proposal COM(2025) 836 text. It was **deleted before adoption** and does not appear in the enacted act. Art. 113, third paragraph, point (c), as replaced by item 40 of Article 1 of Regulation (EU) 2026/1744, reads in full:
+- **The Annex III high-risk date was described as a backstop that could bite earlier. It cannot.** `euaiact_check_deadlines` told callers that 2 December 2027 was "the backstop date" and that "the obligations can bite earlier, six months after a Commission decision that the supporting standards and support measures are available". That mechanism is Commission proposal COM(2025) 836 text. It was **d
+eleted before adoption** and does not appear in the enacted act. Art. 113, third paragraph, point (c), as replaced by item 40 of Article 1 of Regulation (EU) 2026/1744, reads in full:
 
   > Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from: (i) 2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and (ii) 2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I;
 
@@ -179,7 +209,8 @@ families plus three Codex rounds, final verdict SHIP after one remaining routing
   - `mechanism` → `superseded_proposal_mechanism` (and `mechanism_source_status` → `superseded_proposal_mechanism_source_status`)
   - `backstop` → `application_dates` (and `backstop_source_status` → `application_dates_source_status`)
 
-  The superseded proposal text is kept, prefixed `SUPERSEDED, NOT LAW`, so an analysis written from the proposal can be identified as out of date rather than silently contradicted. `application_dates_source_status` is now derived from the enactment record instead of the hardcoded `political_agreement`, so it reads `enacted_oj`.
+  The superseded proposal text is kept, prefixed `SUPERSEDED, NOT LAW`, so an analysis written from the proposal can be identified as out of date rather than silently contradic
+ted. `application_dates_source_status` is now derived from the enactment record instead of the hardcoded `political_agreement`, so it reads `enacted_oj`.
 - `smithery.yaml` had drifted to 1.4.1 while `package.json` was at 1.4.2. Both are now 1.4.3. `RELEASING.md` step 1 covers this; it was missed in the 1.4.2 release.
 
 ### Added
@@ -195,7 +226,8 @@ Verified against the plain text of CELEX 32026R1744 held at `projects/lawvable/_
 ### Fixed
 
 - **Two deltas in the Digital Omnibus pack still carried the Commission proposal's version and were wrong as enacted law.** Both shipped in 1.4.1.
-  - **Art. 4 (AI literacy)** was described as "recast into a duty on the Commission and Member States to foster AI literacy". That is the proposal. The enacted Art. 4(1) keeps the provider and deployer duty, recast as taking measures to **support the development** of AI literacy, and states expressly that it "does not require providers or deployers to guarantee any specific level of AI literacy of any individual". The Commission and Member State duty was **added** as a new Art. 4(2), it did not replace anything.
+  - **Art. 4 (AI literacy)** was described as "recast into a duty on the Commission and Member States to foster AI literacy". That is the proposal. The enacted Art. 4(1) keeps the provider and deployer duty, recast as taking measures to **support the development** of AI literacy, and states expressly that it "does not require providers or deployers to guarantee any specific level of AI literacy of any individual". The Commission and Member State duty was **added** as a
+ new Art. 4(2), it did not replace anything.
   - **Art. 49 / Art. 6(3)** was described as deleting the EU-database registration duty for Annex III systems self-assessed as not high-risk, and was carried as the one item unresolved against the OJ text. The enacted act does **not amend Art. 49 at all**. It deletes only Annex VIII Section B points 7 and 9, which simplifies what that registration must contain. The duty stands. Telling a provider registration was no longer required would have been a live compliance error.
 - **The superseded Art. 4 wording was live in six places**: `articles.ts`, `obligations.ts`, `deadlines.ts`, `classify.ts` (the low-confidence caveat), `server.ts` (the risk-levels resource) and two FAQ answers all still said providers and deployers "must ensure ... a sufficient level of AI literacy".
 - **The Art. 5 delta still warned against emitting the nudification and CSAM prohibitions as current law.** They have been enacted since 27 July 2026 and apply from 2 December 2026. The caution was tagged `political_agreement` and survived the 1.4.0 flip.
@@ -205,7 +237,8 @@ Verified against the plain text of CELEX 32026R1744 held at `projects/lawvable/_
 
 - **Every delta reconciled article by article against the enacted OJ text**, not against the proposal or a tracker. The list is rewritten and expanded from 13 to 20 entries, each citing its item number in Article 1 of Regulation (EU) 2026/1744 so a reader can find it in the OJ. No delta is tagged `commission_proposal` or `political_agreement` any more.
 - New deltas covering Art. 2(13), Art. 11(1)/17(2)/63(1), Art. 25(2) and (4), Art. 28 to 30, Art. 43(3), Art. 50(7)/56(6), Art. 57/60/60a, Art. 72(3), Art. 95(4)/96(1)/99, Art. 111(2) and Art. 113 third paragraph.
-- The Art. 27 delta records that **Art. 27(3) was not amended**: FRIA notification is owed on the results of every completed assessment, not only where a specific risk is found.
+- The Art. 2
+7 delta records that **Art. 27(3) was not amended**: FRIA notification is owed on the results of every completed assessment, not only where a specific risk is found.
 - The Art. 56(6) delta records that recital 41 cites "Art. 53(4) and Art. 54(2)" for code reliance, while Art. 54(2) governs the authorised representative's mandate. The operative pair is Art. 53(4) and Art. 55(2).
 - `OmnibusEnactment` gains `actDate` ("2026-07-08", from the face of the act). The enacted description now quotes that date, and keeps the EP and Council dates as provenance with their source named, since those come from the Council press release rather than the OJ text.
 
@@ -229,7 +262,8 @@ Verified against the plain text of CELEX 32026R1744 held at `projects/lawvable/_
 
 ### Changed
 
-- **Digital Omnibus on AI enacted.** The `omnibusEnactment` record now carries CELEX `32026R1744`, OJ publication `2026-07-24` and entry into force `2026-07-27`, verified against the enacted OJ text on 2026-07-26. All derived surfaces (operative dates, milestone timeline, status labels, server instructions, resources) resolve to the enacted state.
+- **Digital Omnibus on AI enacted
+.** The `omnibusEnactment` record now carries CELEX `32026R1744`, OJ publication `2026-07-24` and entry into force `2026-07-27`, verified against the enacted OJ text on 2026-07-26. All derived surfaces (operative dates, milestone timeline, status labels, server instructions, resources) resolve to the enacted state.
 - **Historical defect, corrected in 1.4.3:** Annex III was correctly dated 2 December 2027 and Annex I 2 August 2028, but this release incorrectly called them backstop dates that a Commission decision could bring forward. Enacted Art. 113, third paragraph, point (c), makes both dates unconditional.
 - **Obligation deadlines are derived rather than hardcoded.** `euaiact_get_obligations` now takes its high-risk application dates from the same source as `euaiact_check_deadlines`, split by Annex III and Annex I, so the two tools cannot state different law for the same system. Previously every high-risk obligation carried a fixed `2026-08-02`.
 - **Art. 50(2) transition reconciled and reattributed.** The entry now cites the new Art. 111(4) where the rule sits, carries the enacted date 2 December 2026 and is tagged to the enacted OJ text. The proposal's 2 February 2027 does not appear in the adopted act. `OmnibusDelta.sourceStatus` accepts `enacted_oj` so reconciled items can be labelled honestly.
@@ -239,7 +273,8 @@ Verified against the plain text of CELEX 32026R1744 held at `projects/lawvable/_
 
 - **Art. 5(1)(ba) and (bb) prohibited practices** (non-consensual intimate material and child sexual abuse material), applying from 2 December 2026. Art. 5(1a) applies to both points; Art. 5(1b) qualifies point (ba) only. These are now reachable through classification and prohibited-practice lookups.
 - **Milestone for 2 December 2026** covering the new Art. 5 prohibitions and the Art. 111(4) synthetic-content transition.
-- **Cross-tool consistency tests** asserting that obligation deadlines match the operative deadline dates, and that limited-risk Art. 50 duties stay on 2 August 2026.
+- **Cross-tool consistency tests** asserting that obligation deadlines match the operative deadline dates, a
+nd that limited-risk Art. 50 duties stay on 2 August 2026.
 - Reverse-simulation tests proving a pending record still resolves to pre-OJ behaviour after the flip.
 
 ### Fixed
@@ -259,7 +294,8 @@ Source-state awareness. The server now separates current OJ law from the Digital
 
 - **Source-status registry** (`src/knowledge/sources.ts`): a `SourceStatus` type (`enacted_oj`, `commission_proposal`, `political_agreement`, guidance/code variants) and a registry of cross-read sources (OJ 2024/1689, COM(2025) 836, the 2026-05-07 political agreement, the Commission overview page).
 - **Structured Digital Omnibus pack** (`src/knowledge/digital-omnibus.ts`): proposal COM(2025) 836 (19 Nov 2025), political agreement (7 May 2026), the high-risk timeline (6/12-month support-measure mechanism, backstop 2 Dec 2027 / 2 Aug 2028), and per-article deltas (Art. 4 literacy, new Art. 4a / Art. 10(5), Art. 49 / Art. 6(3) registration, Art. 50(2) to 2 Feb 2027, Art. 75, Art. 99, Art. 72). Each delta carries its source status.
-- **`euaiact_check_deadlines` gains `include_pending_omnibus`** (default false). The milestone timeline always reflects current OJ law; the pending pack is returned only on opt-in, in a separate `pending_omnibus` field, never as enacted law.
+- **`euaiact_check_deadlines` gains `include_pending_omnibus`** (default false). The milestone timeline always reflects current OJ law; the pending pack is returned only on opt-in, in a separate `pending_omnibu
+s` field, never as enacted law.
 - **New resource `euaiact://omnibus`**: the full source-state view plus the source registry, with a not-enacted disclaimer.
 - 34 new tests (191 to 225), including full-payload guardrails: the entire default response (not just the milestone list) is free of pending shift dates, the Art. 50(2) transition date, and the nudification/CSAM prohibition when pending is off; opt-in does expose them; the high-risk timeline tags the mechanism (`commission_proposal`) and the backstop dates (`political_agreement`) separately.
 
@@ -275,7 +311,8 @@ Source-state awareness. The server now separates current OJ law from the Digital
 
 ## [1.2.0] - 2026-06-15
 
-Legal-accuracy and release-hygiene release following a cross-model audit (Codex) and an independent primary-source cross-read against OJ CELEX 32024R1689. See `docs/audit-2026-06-15-*.md`.
+Legal-accuracy and release-hygiene release following a cross-model audit (Codex) and an 
+independent primary-source cross-read against OJ CELEX 32024R1689. See `docs/audit-2026-06-15-*.md`.
 
 ### Fixed
 
@@ -292,7 +329,8 @@ Legal-accuracy and release-hygiene release following a cross-model audit (Codex)
 
 ### Added
 
-- New signals: `performs_social_scoring`, `biometric_publicly_accessible_space`; Art. 6(3) `no_significant_risk_to_health_safety_fundamental_rights` gate. Legacy signals retained as aliases (backward compatible).
+- New signals: `performs_social_scoring`, `biometric_publicly_accessible_space`; Art. 6(3) `no_significant_risk_to_health_safety_fundamental_rights` gate. Legacy signals retained as
+ aliases (backward compatible).
 - Adversarial legal tests plus a source-to-`dist` consistency check (110 to 166 tests).
 
 ### Changed
@@ -313,7 +351,8 @@ Legal-accuracy and release-hygiene release following a cross-model audit (Codex)
 
 ### Changed
 
-- **Digital Omnibus block** in `euaiact_check_deadlines` updated to reflect the 2026-05-07 Council/Parliament provisional political agreement on the AI Act portion of the Digital Omnibus Simplification Package. The agreement is NOT yet adopted law (procedure 2025/0359(COD) still awaiting Parliament's position in 1st reading per EP Legislative Observatory). Current-law dates remain authoritative for compliance advice until formal adoption plus Official Journal publication.
+- **Digital Omnibus block** in `euaiact_check_deadlines` updated to reflect the 2026-05-07 Council/Parliament provisional political agreement on the AI Act portion of the
+ Digital Omnibus Simplification Package. The agreement is NOT yet adopted law (procedure 2025/0359(COD) still awaiting Parliament's position in 1st reading per EP Legislative Observatory). Current-law dates remain authoritative for compliance advice until formal adoption plus Official Journal publication.
   - `status` flips from `"proposal_only"` to `"provisional_agreement"`.
   - `description` and `keyChanges` rewritten to enumerate the specific provisional shifts (Annex III to 2 Dec 2027, Annex I to 2 Aug 2028, Article 50 watermarking to 2 Dec 2026, prohibited-practices expansion with CSAM and non-consensual intimate content, registration mandate preserved, sensitive-data bias detection broadened) and explicitly mark what is UNCHANGED (GPAI obligations, Commission GPAI enforcement on 2 Aug 2026, legacy GPAI on 2 Aug 2027).
   - `impactOnAIAct` retains the "plan against current law" guidance with refreshed status framing and source citations.
@@ -329,7 +368,8 @@ Legal-accuracy and release-hygiene release following a cross-model audit (Codex)
 
 ### Changed
 
-- Strengthened README disclaimer to reference § 2 RDG explicitly.
+- Strengthened README disclaimer to referenc
+e § 2 RDG explicitly.
 
 ## [1.1.0] - 2026-04
 
@@ -343,7 +383,8 @@ Legal-accuracy and release-hygiene release following a cross-model audit (Codex)
 - **`euaiact_annex_iv_checklist`** to return all nine Annex IV technical-documentation items, optionally as a markdown checklist, with an SME-simplified note.
 - **Resources** `euaiact://annex/iii` (full Annex III categories) and `euaiact://annex/iv` (full Annex IV checklist).
 - **Prompt** `ground-citation` originally guided the agent to quote after calling `euaiact_get_article`; this was later corrected because the tool returns an operational summary, not statutory text. Agents must follow the EUR-Lex URL and verify official wording before quoting.
-- 5 new FAQ entries covering the FLOPs threshold for systemic-risk GPAI, FRIA for credit scoring, chatbot disclosure under Art. 50(1), minimal-risk spellchecker and recommender examples, and an expanded Art. 6(3) exception entry with the profiling caveat.
+- 5 new FAQ entries covering the FLOPs threshold for systemic-risk GPAI, FRIA for credit scoring, chatbot disclosure under Art. 50(1), minimal-risk sp
+ellchecker and recommender examples, and an expanded Art. 6(3) exception entry with the profiling caveat.
 - `comparative` block in `euaiact_calculate_penalty` showing the SME reduction alongside the non-SME amount.
 - `only_upcoming` filter and a `next_milestone` shortcut in `euaiact_check_deadlines`.
 - 27 article summaries with EUR-Lex URLs.
@@ -351,11 +392,6 @@ Legal-accuracy and release-hygiene release following a cross-model audit (Codex)
 
 ### Fixed
 
-- **Classifier correctness.** Rewrote `src/utils/matching.ts` to eliminate a multi-word-keyword false-positive bug (where a single-character token like `"e"` in `"e-commerce"` could match keywords starting with `"e"`) and a fractional-denominator false-negative (where realistic recruitment descriptions scored below threshold on Annex III(4)). See `AUDIT.md` for root-cause detail.
-- **Penalty description.** When `is_sme: true` the `tier_details.description` now correctly says "whichever is lower (Art. 99(6) SME/startup protection)" instead of contradicting the `max_fine.explanation`.
-- **FAQ search.** `findBestMatch` uses symmetric overlap (`matched / min(query_words, item_words)`), so specific multi-word queries like "FRIA for credit scoring" no longer drop to generic answers.
+- **Classifier correctness.** Rewrote `src/utils/matching.ts` to eliminate a multi-word-keyword false-positive bug (where a single-character token like `"e"` in `"e-commerce"` could match keywords starting with `"e"`) and a fractional-denominator false-negative (where realistic recruitment descriptions scored below threshold on Annex
 
-### Changed
-
-- **Slim per-response branding.** `disclaimer`, `source`, and `last_updated` were moved into the MCP `serverInfo.instructions` shown once on initialize. Agents no longer pay a per-call context tax for attribution. `lexbeam_url` is kept only where it adds deep-dive value (FAQ, obligations, classifier).
-- **Test suite** expanded from 54 to 108 tests, including regression tests for every bug fixed in this release.
+... [Content truncated]

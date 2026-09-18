@@ -1,6 +1,6 @@
 {
   "contract_version": "1.2",
-  "server_version": "1.5.0",
+  "server_version": "1.5.1",
   "corpus": {
     "id": "eu-ai-act-2026-07-27",
     "regulation_id": "eu-ai-act",
@@ -59,7 +59,8 @@
             "source.oj.2024.1689.original",
             "source.oj.2026.1744"
           ],
-          "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_3",
+          "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:020
+24R1689-20260727#art_3",
           "operative_date": "2025-02-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
           "verification_level": "consolidated_snapshot_integrity_verified"
@@ -108,7 +109,8 @@
     ],
     "limitations": [
       "This non-applicability result is bounded to the supplied AI-system definition fact.",
-      "The supplied geography label does not establish territorial scope. Determine Article 2(1)'s actor, establishment, market-placement, deployment-location, or Union-output condition and test all applicable Article 2 limitations and exclusions separately."
+      "The supplied geography label does not establish territorial scope. Determine Article 2(1)'s actor, establis
+hment, market-placement, deployment-location, or Union-output condition and test all applicable Article 2 limitations and exclusions separately."
     ]
   },
   "impact": {
