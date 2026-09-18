@@ -1,6 +1,6 @@
 {
   "contract_version": "1.2",
-  "server_version": "1.5.0",
+  "server_version": "1.5.1",
   "corpus": {
     "id": "eu-ai-act-2026-07-27",
     "regulation_id": "eu-ai-act",
@@ -56,7 +56,8 @@
       "verification": "caller_asserted",
       "evidence_reference_ids": []
     },
-    {
+  
+  {
       "fact_id": "fact.role.provider",
       "profile_path": "/role_facts/roles/1",
       "value": "provider",
@@ -118,7 +119,8 @@
         "fact.geography.eu",
         "fact.role.deployer",
         "fact.role.provider",
-        "fact.transparency.synthetic"
+    
+    "fact.transparency.synthetic"
       ],
       "assumption_ids": [],
       "missing_fact_ids": [],
@@ -173,7 +175,8 @@
             "source.oj.2026.1744"
           ],
           "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_50",
-          "operative_date": "2026-08-02",
+          "operative_date": "202
+6-08-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
           "verification_level": "consolidated_snapshot_integrity_verified"
         }
@@ -233,7 +236,8 @@
       "provenance": [
         {
           "instrument_id": "regulation-eu-2024-1689",
-          "exact_provision": "Art. 4",
+          "exact_provision": "A
+rt. 4",
           "instrument_status": "enacted",
           "source_id": "source.oj.2024.1689.consolidated.20260727",
           "authority_source_ids": [
@@ -280,7 +284,8 @@
         "fact.geography.eu",
         "fact.role.deployer",
         "fact.role.provider",
-        "fact.transparency.deep-fake",
+        "fact.transparency
+.deep-fake",
         "fact.transparency.marked",
         "fact.transparency.synthetic",
         "fact.use.synthetic-video.purpose"
@@ -324,7 +329,8 @@
     {
       "warning_id": "warning.non-binding-source.001",
       "code": "NON_BINDING_SOURCE",
-      "message": "Corpus verification confirms only the identity and integrity of the pinned files. It does not establish that the consolidated snapshot has legal effect, that the corpus is current or complete for the facts, that an interpretation is correct, or that a system is compliant, certified, approved, or has passed a conformity assessment.",
+      "message": "Corpus verification confirms only the identity and integrity of the pinned files. It does not establish that the consolidated snapshot has legal effect, that the corpus is current or complete for the facts, that an interpretation is correct, or that a system is compliant, certifie
+d, approved, or has passed a conformity assessment.",
       "finding_ids": [
         "finding.impact.supplied-context.001",
         "finding.legal.transparency.article.50.2.fact.transparency.synthetic",
@@ -375,7 +381,8 @@
       {
         "route": "transparency_duty",
         "finding_ids": [
-          "finding.legal.transparency.article.50.2.fact.transparency.synthetic",
+          "finding.legal.transparency.article.50.2.fact.t
+ransparency.synthetic",
           "finding.legal.transparency.article.50.4.fact.transparency.deep.fake"
         ],
         "actor_roles": [
@@ -428,7 +435,8 @@
     "current_controls": [],
     "residual_impact": {
       "description": "No supplied tested-control evidence reduces the described inherent impact.",
-      "categories": [
+      "cate
+gories": [
         "due_process_and_effective_remedy"
       ],
       "affected_group_ids": [
@@ -494,7 +502,8 @@
         ],
         "exact_provision": "Art. 4",
         "operative_date": "2026-07-27",
-        "evidence_state": "missing",
+        "evide
+nce_state": "missing",
         "owner_ids": [
           "owner.unassigned"
         ],
@@ -559,7 +568,8 @@
         "duty_ids": [
           "duty.deployer.art.4.ai.literacy"
         ],
-        "description": "Supply documented evidence for this duty.",
+  
+      "description": "Supply documented evidence for this duty.",
         "owner_ids": [
           "owner.unassigned"
         ],

@@ -1,6 +1,6 @@
 {
   "contract_version": "1.2",
-  "server_version": "1.5.0",
+  "server_version": "1.5.1",
   "corpus": {
     "id": "eu-ai-act-2026-07-27",
     "regulation_id": "eu-ai-act",
@@ -57,7 +57,8 @@
       "evidence_reference_ids": []
     },
     {
-      "fact_id": "fact.decision.recruitment-assistant.material",
+      "fact_id": "fact.decision.recruitment-assistant
+.material",
       "profile_path": "/decision_context/materially_influences_decision",
       "value": true,
       "origin": "explicit_structured_input",
@@ -117,7 +118,8 @@
   "missing_facts": [],
   "findings": [
     {
-      "finding_id": "finding.legal.high-risk.annex_iii.4.001",
+      "finding_id": "finding.legal.hi
+gh-risk.annex_iii.4.001",
       "finding_basis": "legal_proposition",
       "block": "legal_classification",
       "summary": "The existing Article 6 classifier identifies a high-risk route from the supplied facts.",
@@ -172,7 +174,8 @@
         "jurisdictions": [
           "EU"
         ],
-        "system_scope": "recruitment-assistant"
+        "system_scope": "recruitment-assis
+tant"
       },
       "fact_ids": [
         "fact.geography.eu",
@@ -228,7 +231,8 @@
       "finding_id": "finding.readiness.provider.001",
       "finding_basis": "legal_proposition",
       "block": "implementation_readiness",
-      "summary": "Applicable duties for the provider role: 15 (evidence documented 0, partial 0, missing 15). The duties are selected from the existing obligations tool; per-duty titles, exact provisions, operative dates, and evidence states are listed in applicable_duties.",
+      "summary": "Applicable duties for the provider role: 15 (evidence documented 0, partial 0, missing 15). The duties are selected from the existing obligati
+ons tool; per-duty titles, exact provisions, operative dates, and evidence states are listed in applicable_duties.",
       "scope": {
         "actors": [
           "provider"
@@ -278,7 +282,8 @@
           "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_11",
           "operative_date": "2027-12-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
-          "verification_level": "consolidated_snapshot_integrity_verified"
+          "verification_level": "consolidate
+d_snapshot_integrity_verified"
         },
         {
           "instrument_id": "regulation-eu-2024-1689",
@@ -320,7 +325,8 @@
           "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_14",
           "operative_date": "2027-12-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
-          "verification_level": "consolidated_snapshot_integrity_verified"
+          "verification_level": "consolidated_snapshot_integr
+ity_verified"
         },
         {
           "instrument_id": "regulation-eu-2024-1689",
@@ -364,7 +370,8 @@
           "source_status": "official_consolidated_snapshot_non_authentic",
           "verification_level": "consolidated_snapshot_integrity_verified"
         },
-        {
+   
+     {
           "instrument_id": "regulation-eu-2024-1689",
           "exact_provision": "Art. 43",
           "instrument_status": "enacted",
@@ -407,7 +414,8 @@
           "verification_level": "consolidated_snapshot_integrity_verified"
         },
         {
-          "instrument_id": "regulation-eu-2024-1689",
+          "instrume
+nt_id": "regulation-eu-2024-1689",
           "exact_provision": "Art. 50(1)",
           "instrument_status": "enacted",
           "source_id": "source.oj.2024.1689.consolidated.20260727",
@@ -449,7 +457,8 @@
           "verification_level": "consolidated_snapshot_integrity_verified"
         },
         {
-          "instrument_id": "regulation-eu-2024-1689",
+          "instrument_id": "regulation-eu-
+2024-1689",
           "exact_provision": "Art. 9",
           "instrument_status": "enacted",
           "source_id": "source.oj.2024.1689.consolidated.20260727",
@@ -492,7 +501,8 @@
     {
       "warning_id": "warning.summary-only.001",
       "code": "SUMMARY_ONLY",
-      "message": "Finding summaries and duty titles are bounded operational summaries, not statutory text. Verify every conclusion against the linked official provision.",
+      "message": "Finding summaries and duty titles are bounded operationa
+l summaries, not statutory text. Verify every conclusion against the linked official provision.",
       "finding_ids": [
         "finding.impact.supplied-context.001",
         "finding.legal.high-risk.annex_iii.4.001",
@@ -558,7 +568,8 @@
       "finding.legal.transparency.article.50.1.fact.transparency.interacts"
     ],
     "limitations": [
-      "Routes are independent. Impact and implementation readiness are reported separately.",
+      "Routes are independent. Impact and implementation
+ readiness are reported separately.",
       "The supplied geography label does not establish territorial scope. Determine Article 2(1)'s actor, establishment, market-placement, deployment-location, or Union-output condition and test all applicable Article 2 limitations and exclusions separately.",
       "The stated date is the general application date for the statutory route. It does not determine the treatment of a system already placed on the market or put into service. Apply Article 111 to the system's market date, type, model and later design changes.",
       "The frozen profile has no no-significant-risk predicate, so the existing Article 6(3) evaluator cannot establish the exception in this call."
@@ -605,7 +616,8 @@
         "group.fact.group.recruitment.assistant"
       ],
       "fact_ids": [
-        "fact.annex-iii.domain",
+ 
+       "fact.annex-iii.domain",
         "fact.decision.recruitment-assistant.consequence",
         "fact.decision.recruitment-assistant.material",
         "fact.group.recruitment-assistant"
@@ -674,7 +686,8 @@
         ]
       },
       {
-        "duty_id": "duty.provider.art.13.transparency",
+        
+"duty_id": "duty.provider.art.13.transparency",
         "title": "Transparency and provision of information to deployers",
         "actor_roles": [
           "provider"
@@ -743,7 +756,8 @@
         "actor_roles": [
           "provider"
         ],
-        "exact_provision": "Art. 4",
+        "
+exact_provision": "Art. 4",
         "operative_date": "2026-07-27",
         "evidence_state": "missing",
         "owner_ids": [
@@ -815,7 +829,8 @@
         ],
         "finding_ids": [
           "finding.readiness.provider.001"
-        ]
+ 
+       ]
       },
       {
         "duty_id": "duty.provider.art.72.post.market",
@@ -884,7 +899,8 @@
         "note": "No evidence reference was matched to this duty in the supplied profile."
       },
       {
-        "evidence_id": "evidence.missing.duty.provider.art.12.art.19.documentation",
+        "evidence_id": "evidence.missing.du
+ty.provider.art.12.art.19.documentation",
         "duty_ids": [
           "duty.provider.art.12.art.19.documentation"
         ],
@@ -905,271 +921,6 @@
           "duty.provider.art.14.human.oversight"
         ],
         "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.15.technical.requirements",
-        "duty_ids": [
-          "duty.provider.art.15.technical.requirements"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.17.quality.management",
-        "duty_ids": [
-          "duty.provider.art.17.quality.management"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.4.ai.literacy",
-        "duty_ids": [
-          "duty.provider.art.4.ai.literacy"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.43.conformity.assessment",
-        "duty_ids": [
-          "duty.provider.art.43.conformity.assessment"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.47.conformity.assessment",
-        "duty_ids": [
-          "duty.provider.art.47.conformity.assessment"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.49.registration",
-        "duty_ids": [
-          "duty.provider.art.49.registration"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.50.1.transparency",
-        "duty_ids": [
-          "duty.provider.art.50.1.transparency"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.72.post.market",
-        "duty_ids": [
-          "duty.provider.art.72.post.market"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.73.incident.reporting",
-        "duty_ids": [
-          "duty.provider.art.73.incident.reporting"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      },
-      {
-        "evidence_id": "evidence.missing.duty.provider.art.9.risk.management",
-        "duty_ids": [
-          "duty.provider.art.9.risk.management"
-        ],
-        "state": "missing",
-        "note": "No evidence reference was matched to this duty in the supplied profile."
-      }
-    ],
-    "control_gaps": [
-      {
-        "gap_id": "gap.duty.provider.art.10.data.governance",
-        "duty_ids": [
-          "duty.provider.art.10.data.governance"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.11.documentation",
-        "duty_ids": [
-          "duty.provider.art.11.documentation"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.12.art.19.documentation",
-        "duty_ids": [
-          "duty.provider.art.12.art.19.documentation"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.13.transparency",
-        "duty_ids": [
-          "duty.provider.art.13.transparency"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.14.human.oversight",
-        "duty_ids": [
-          "duty.provider.art.14.human.oversight"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.15.technical.requirements",
-        "duty_ids": [
-          "duty.provider.art.15.technical.requirements"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.17.quality.management",
-        "duty_ids": [
-          "duty.provider.art.17.quality.management"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.4.ai.literacy",
-        "duty_ids": [
-          "duty.provider.art.4.ai.literacy"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2026-07-27"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.43.conformity.assessment",
-        "duty_ids": [
-          "duty.provider.art.43.conformity.assessment"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.47.conformity.assessment",
-        "duty_ids": [
-          "duty.provider.art.47.conformity.assessment"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.49.registration",
-        "duty_ids": [
-          "duty.provider.art.49.registration"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.50.1.transparency",
-        "duty_ids": [
-          "duty.provider.art.50.1.transparency"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2026-08-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.72.post.market",
-        "duty_ids": [
-          "duty.provider.art.72.post.market"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.73.incident.reporting",
-        "duty_ids": [
-          "duty.provider.art.73.incident.reporting"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      },
-      {
-        "gap_id": "gap.duty.provider.art.9.risk.management",
-        "duty_ids": [
-          "duty.provider.art.9.risk.management"
-        ],
-        "description": "Supply documented evidence for this duty.",
-        "owner_ids": [
-          "owner.unassigned"
-        ],
-        "target_date": "2027-12-02"
-      }
-    ],
-    "owners": [
-      {
-        "owner_id": "owner.unassigned",
-        "label": "Unassigned",
-        "responsibility": "Assign accountable ownership for applicable duties and evidence."
-      }
-    ],
-    "finding_ids": [
-      "finding.readiness.provider.001"
-    ],
-    "limitations": [
-      "Readiness reports only whether the supplied evidence was mapped to the duties identified in this output. It does not establish that all applicable duties were identified, that the evidence is legally sufficient, or that the provider or deployer complies with the Regulation.",
-      "This output is not certification, approval, or regulatory assurance.",
-      "The stated date is the general application date for the statutory route. It does not determine the treatment of a system already placed on the market or put into service. Apply Article 111 to the system's market date, type, model and later design changes."
-    ],
-    "is_regulatory_approval": false
-  }
-}
+       
+
+... [Content truncated]

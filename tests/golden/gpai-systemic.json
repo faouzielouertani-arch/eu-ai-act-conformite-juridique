@@ -1,6 +1,6 @@
 {
   "contract_version": "1.2",
-  "server_version": "1.5.0",
+  "server_version": "1.5.1",
   "corpus": {
     "id": "eu-ai-act-2026-07-27",
     "regulation_id": "eu-ai-act",
@@ -57,7 +57,8 @@
       "evidence_reference_ids": []
     },
     {
-      "fact_id": "fact.gpai.market-date",
+      "fact_id": "fact.gpai.mar
+ket-date",
       "profile_path": "/gpai/model_placed_on_market_date",
       "value": "2026-08-13",
       "origin": "explicit_structured_input",
@@ -117,7 +118,8 @@
         "actors": [
           "gpai_provider"
         ],
-        "jurisdictions": [
+      
+  "jurisdictions": [
           "EU"
         ],
         "system_scope": "gpai-model"
@@ -173,7 +175,8 @@
         {
           "instrument_id": "regulation-eu-2024-1689",
           "exact_provision": "Article 51(1)(a)",
-          "instrument_status": "enacted",
+          "instrument_s
+tatus": "enacted",
           "source_id": "source.oj.2024.1689.consolidated.20260727",
           "authority_source_ids": [
             "source.oj.2024.1689.original",
@@ -215,7 +218,8 @@
         {
           "instrument_id": "regulation-eu-2024-1689",
           "exact_provision": "Article 52(2)",
-          "instrument_status": "enacted",
+          "instrument_status": 
+"enacted",
           "source_id": "source.oj.2024.1689.consolidated.20260727",
           "authority_source_ids": [
             "source.oj.2024.1689.original",
@@ -271,7 +275,8 @@
         "fact.geography.eu",
         "fact.gpai.designated",
         "fact.gpai.is-model",
-        "fact.gpai.market-date",
+        "
+fact.gpai.market-date",
         "fact.gpai.name",
         "fact.gpai.training-flops",
         "fact.role.gpai_provider",
@@ -317,7 +322,8 @@
             "source.oj.2024.1689.original",
             "source.oj.2026.1744"
           ],
-          "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_53",
+          "official_url": "https://eur-lex.europa.eu/legal-content/EN/T
+XT/?uri=CELEX:02024R1689-20260727#art_53",
           "operative_date": "2025-08-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
           "verification_level": "consolidated_snapshot_integrity_verified"
@@ -359,7 +365,8 @@
             "source.oj.2024.1689.original",
             "source.oj.2026.1744"
           ],
-          "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_55",
+          "official_url": "https://eur-lex.europa.eu/legal-content/EN/
+TXT/?uri=CELEX:02024R1689-20260727#art_55",
           "operative_date": "2025-08-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
           "verification_level": "consolidated_snapshot_integrity_verified"
@@ -401,7 +408,8 @@
             "source.oj.2024.1689.original",
             "source.oj.2026.1744"
           ],
-          "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727#art_55",
+          "official_url": "https://eur-lex.europa.eu/legal-content/EN
+/TXT/?uri=CELEX:02024R1689-20260727#art_55",
           "operative_date": "2025-08-02",
           "source_status": "official_consolidated_snapshot_non_authentic",
           "verification_level": "consolidated_snapshot_integrity_verified"
@@ -448,7 +456,8 @@
   "recommended_next_calls": [
     {
       "tool_name": "euaiact_check_gpai_systemic_risk",
-      "reason": "Assess the separate GPAI systemic-risk route from compute or designation facts.",
+      "reason": "A
+ssess the separate GPAI systemic-risk route from compute or designation facts.",
       "input_fact_ids": [
         "fact.gpai.designated",
         "fact.gpai.is-model",
@@ -513,7 +522,8 @@
       }
     ],
     "current_controls": [],
-    "residual_impact": {
+    "residual_i
+mpact": {
       "description": "No supplied tested-control evidence reduces the described inherent impact.",
       "categories": [
         "due_process_and_effective_remedy"
@@ -575,7 +585,8 @@
       },
       {
         "duty_id": "duty.gpai.provider.article.53.1.b.documentation",
-        "title": "Information and documentation for downstream providers",
+        "title": "Information and documentation for downstre
+am providers",
         "actor_roles": [
           "gpai_provider"
         ],
@@ -643,7 +654,8 @@
         "actor_roles": [
           "gpai_provider"
         ],
-        "exact_provision": "Article 55(1)(b)",
+        "exact_provision": "
+Article 55(1)(b)",
         "operative_date": "2025-08-02",
         "evidence_state": "missing",
         "owner_ids": [
@@ -704,7 +716,8 @@
         "note": "No evidence reference was matched to this duty in the supplied profile."
       },
       {
-        "evidence_id": "evidence.missing.duty.gpai.provider.article.53.1.b.documentation",
+        "evidence_id": "evidence.missing.duty.gpai.provider.article.53.1.b.documentation"
+,
         "duty_ids": [
           "duty.gpai.provider.article.53.1.b.documentation"
         ],
@@ -754,7 +767,8 @@
       {
         "evidence_id": "evidence.missing.duty.gpai.provider.article.55.1.d.technical.requirements",
         "duty_ids": [
-          "duty.gpai.provider.article.55.1.d.technical.requirements"
+          "duty.gpai.provider.article.55.1.d.
+technical.requirements"
         ],
         "state": "missing",
         "note": "No evidence reference was matched to this duty in the supplied profile."
@@ -817,7 +831,8 @@
         "target_date": "2025-08-02"
       },
       {
-        "gap_id": "gap.duty.gpai.provider.article.55.1.a.risk.management",
+        "gap_id": "gap.duty.gpai.provider.article.55.1.a.risk.manage
+ment",
         "duty_ids": [
           "duty.gpai.provider.article.55.1.a.risk.management"
         ],
@@ -873,7 +888,8 @@
     ],
     "limitations": [
       "Readiness reports only whether the supplied evidence was mapped to the duties identified in this output. It does not establish that all applicable duties were identified, that the evidence is legally sufficient, or that the provider or deployer complies with the Regulation.",
-      "This output is not certification, approval, or regulatory assurance."
+      "This output is not certification, approval, or 
+regulatory assurance."
     ],
     "is_regulatory_approval": false
   }
